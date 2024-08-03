@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="allGrades">
+
+        <item>AA</item>
+        <item>BA</item>
+        <item>BB</item>
+        <item>CB</item>
+        <item>CC</item>
+        <item>DC</item>
+        <item>DD</item>
+        <item>FD</item>
+        <item>FF</item>
+
+    </string-array>
+    <string-array name="credits">
+
+        <item>1 Kredi</item>
+        <item>1.5 Kredi</item>
+        <item>2 Kredi</item>
+        <item>2.5 Kredi</item>
+        <item>3 Kredi</item>
+        <item>3.5 Kredi</item>
+        <item>4 Kredi</item>
+        <item>4.5 Kredi</item>
+        <item>5 Kredi</item>
+        <item>5.5 Kredi</item>
+        <item>6 Kredi</item>
+        <item>6.5 Kredi</item>
+        <item>7 Kredi</item>
+        <item>7.5 Kredi</item>
+        <item>8 Kredi</item>
+        <item>8.5 Kredi</item>
+        <item>9 Kredi</item>
+        <item>9.5 Kredi</item>
+        <item>10 Kredi</item>
+
+    </string-array>
+
+    <string-array name="daysOfWeek">
+
+        <item>Pazartesi</item>
+        <item>Salı</item>
+        <item>Çarşamba</item>
+        <item>Perşembe</item>
+        <item>Cuma</item>
+        <item>Cumartesi</item>
+        <item>Pazar</item>
+
+    </string-array>
+
+</resources>

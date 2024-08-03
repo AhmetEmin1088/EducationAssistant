@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/border_layout"
+    >
+        <TextView
+            android:id="@+id/recyclerNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="72dp"
+            android:padding="5dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Exam Name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recyclerDateText"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="01/01/2024"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recyclerTimeText"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="13:00"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/recyclerRemoveExamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF6347"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Sınavı Sil"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            />
+
+</LinearLayout>

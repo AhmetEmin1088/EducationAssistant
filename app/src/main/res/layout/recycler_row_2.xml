@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/border_layout"
+    >
+
+    <TextView
+        android:id="@+id/recyclerNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Assignment Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/recyclerDescriptionText"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Assignment Description"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/recyclerDeadlineText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="01/01/2000"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/recyclerRemoveAssignmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF6347"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ödevi Sil"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>

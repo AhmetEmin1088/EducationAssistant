@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EEEEEEEE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/examNameText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="72dp"
+            android:padding="5dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint=" Sınavın Adını Giriniz : "
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#EEEEEEEE"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="158dp" />
+
+        <TextView
+            android:id="@+id/examDateText"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:padding="5dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:hint="Tarih :"
+            android:textColor="@color/white"
+            android:textColorHint="#EEEEEEEE"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/examNameText" />
+
+        <TextView
+            android:id="@+id/examTimeText"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="72dp"
+            android:padding="5dp"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#336CFF"
+            android:ems="10"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:hint="Saat :"
+            android:textColor="@color/white"
+            android:textColorHint="#EEEEEEEE"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/examDateText" />
+
+        <Button
+            android:id="@+id/setReminderButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="56dp"
+            android:backgroundTint="#336CFF"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Hatırlatma Ayarla"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/examTimeText" />
+
+        <ImageView
+            android:id="@+id/examPageView"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="56dp"
+            android:src="@drawable/exam_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setReminderButton" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

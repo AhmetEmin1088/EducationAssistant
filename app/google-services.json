@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634746401881",
+    "project_id": "educationassistantkotlin",
+    "storage_bucket": "educationassistantkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634746401881:android:ea08a13bf17be2aa88ad48",
+        "android_client_info": {
+          "package_name": "com.example.educationassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-hdvDkbratZmKxKkLTxO0yJzZTK45LM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

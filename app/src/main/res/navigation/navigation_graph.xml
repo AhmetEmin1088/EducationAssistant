@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.educationassistant.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.educationassistant.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_resourcesFragment"
+            app:destination="@id/resourcesFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_assignmentFragment"
+            app:destination="@id/assignmentFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_examFragment"
+            app:destination="@id/examFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_gpaFragment"
+            app:destination="@id/gpaFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_timetableFragment"
+            app:destination="@id/timetableFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.educationassistant.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+
+        <action
+            android:id="@+id/action_registrationFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.educationassistant.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assignmentFragment"
+        android:name="com.example.educationassistant.AssignmentFragment"
+        android:label="fragment_assignment"
+        tools:layout="@layout/fragment_assignment" >
+        <action
+            android:id="@+id/action_assignmentFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_assignmentFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/examFragment"
+        android:name="com.example.educationassistant.ExamFragment"
+        android:label="fragment_exam"
+        tools:layout="@layout/fragment_exam" >
+        <action
+            android:id="@+id/action_examFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_examFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gpaFragment"
+        android:name="com.example.educationassistant.GpaFragment"
+        android:label="fragment_gpa"
+        tools:layout="@layout/fragment_gpa" >
+        <action
+            android:id="@+id/action_gpaFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_gpaFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.educationassistant.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsWebViewFragment"
+            app:destination="@id/newsWebViewFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resourcesFragment"
+        android:name="com.example.educationassistant.ResourcesFragment"
+        android:label="fragment_resources"
+        tools:layout="@layout/fragment_resources" >
+        <action
+            android:id="@+id/action_resourcesFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_resourcesFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timetableFragment"
+        android:name="com.example.educationassistant.TimetableFragment"
+        android:label="fragment_timetable"
+        tools:layout="@layout/fragment_timetable" >
+        <action
+            android:id="@+id/action_timetableFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_timetableFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.example.educationassistant.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" >
+        <action
+            android:id="@+id/action_aboutAppFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allAssignmentsFragment"
+        android:name="com.example.educationassistant.AllAssignmentsFragment"
+        android:label="fragment_all_assignments"
+        tools:layout="@layout/fragment_all_assignments" >
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_allAssignmentsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allExamsFragment"
+        android:name="com.example.educationassistant.AllExamsFragment"
+        android:label="fragment_all_exams"
+        tools:layout="@layout/fragment_all_exams" >
+        <action
+            android:id="@+id/action_allExamsFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_allExamsFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_allExamsFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_allExamsFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_allExamsFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_allExamsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displayTimetableFragment"
+        android:name="com.example.educationassistant.DisplayTimetableFragment"
+        android:label="fragment_display_timetable"
+        tools:layout="@layout/fragment_display_timetable" >
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_timetableFragment"
+            app:destination="@id/timetableFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_displayTimetableFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsWebViewFragment"
+        android:name="com.example.educationassistant.NewsWebViewFragment"
+        android:label="fragment_news_web_view"
+        tools:layout="@layout/fragment_news_web_view" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_newsWebViewFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.educationassistant.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_allAssignmentsFragment"
+            app:destination="@id/allAssignmentsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_allExamsFragment"
+            app:destination="@id/allExamsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_displayTimetableFragment"
+            app:destination="@id/displayTimetableFragment" />
+    </fragment>
+
+
+</navigation>

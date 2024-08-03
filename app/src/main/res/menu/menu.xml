@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/main_page" android:title="Ana Sayfa" />
+    <item android:id="@+id/profile" android:title="Profilim" />
+    <item android:id="@+id/timetable" android:title="Ders Programı" />
+    <item android:id="@+id/all_exams" android:title="Sınavlarım" />
+    <item android:id="@+id/all_assignments" android:title="Ödevlerim" />
+    <item android:id="@+id/about_app" android:title="Hakkında" />
+    <item android:id="@+id/log_out" android:title="Oturumu Kapat" />
+    <item android:id="@+id/close_app" android:title="Uygulamayı Kapat" />
+
+
+</menu>

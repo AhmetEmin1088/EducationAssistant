@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    >
+
+    <TextView
+        android:id="@+id/newLessonNameText"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteLessonButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/newCreditSpinner"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:fontFamily="@font/poppins_bold"
+        android:entries="@array/credits"
+        app:layout_constraintBottom_toBottomOf="@+id/newGradeSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newLessonNameText" />
+
+    <Spinner
+        android:id="@+id/newGradeSpinner"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#336CFF"
+        android:fontFamily="@font/poppins_bold"
+        android:entries="@array/allGrades"
+        app:layout_constraintEnd_toStartOf="@+id/deleteLessonButton"
+        app:layout_constraintStart_toEndOf="@+id/newCreditSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/newLessonNameText" />
+
+    <Button
+        android:id="@+id/deleteLessonButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#336CFF"
+        android:text="x"
+        android:textSize="25dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newLessonNameText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCreditSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>

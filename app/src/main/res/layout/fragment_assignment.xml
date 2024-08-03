@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEEEE"
+    tools:context=".AssignmentFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/assignmentNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#336CFF"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Ödevin Adını Giriniz :"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EEEEEEEE"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/assignmentDescriptionText"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#336CFF"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:hint="Ödevin İçeriği :"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EEEEEEEE"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/assignmentDeadlineText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#336CFF"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:hint="Tarih:"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#EEEEEEEE"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/setReminderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#336CFF"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Hatırlatma Ayarla"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/assignmentPageView"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/assignment_page" />
+
+
+        </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
